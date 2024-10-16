@@ -22,7 +22,7 @@
 };
 
 / {
-    behaviors: {
+    behaviors {
         fofunc: four_ffour {
             compatible = "zmk,behavior-mod-morph";
             label = "FOUR_FUNCFOUR";
