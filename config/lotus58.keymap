@@ -26,7 +26,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label="Main"
+            label="Main";
 //   ------------------------------------------------------------------------------------------------------------
 //  0|  ESC  |  1  |  2  |  3   |  4   |  5   |                     |  6   |  7    |  8    |  9   |   0   |   =   | 11
 // 12|  TAB  |  Q  |  W  |  E   |  R   |  T   |                     |  Y   |  U    |  I    |  O   |   P   |   [   | 23
@@ -38,14 +38,14 @@
 &kp TAB   &kp Q  &kp W    &kp E      &kp R     &kp T                                &kp Y     &kp U       &kp I     &kp O    &kp P    &kp BSLH
 &kp LSHFT &kp A  &kp S    &kp D      &kp F     &kp G      &sys_reset     &sys_reset &kp H     &kp J       &kp K     &kp L    &kp SEMI &kp SQT
 &kp LCTRL &kp Z  &kp X    &kp C      &kp V     &kp B      &kp LBKT       &kp RBKT   &kp N     &kp M       &kp COMMA &kp DOT  &kp FSLH &kp RET
-                          &kp LGUI   &kp LALT  &mo 1      &kp SPACE      &kp SPACE  &mo 1  &kp MINUS   &kp EQUAL
+                          &kp LGUI   &kp LALT  &mo 1      &kp SPACE      &kp SPACE  &mo 2  &kp MINUS   &kp EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
-            label="Mod"
+            label="Mod";
 // ------------------------------------------------------------------------------------------------------------
 // | `     |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
 // |       |  !  | HOME|   ^  |  END |  %   |                   | VOL^ |  PGUP |  INS  |  ^   |  PSCR |   -   |
@@ -64,7 +64,7 @@
         };
 
         raise_layer {
-            label="Mod2"
+            label="Mod2";
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |OUTTOG|OUTUSB| OUTBT |      | RESET | FLASH |
 // |     | INS  | PSCR | GUI   | RESET |      |                | PGUP |      |   ^   |      |       |       |
