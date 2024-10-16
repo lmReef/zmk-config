@@ -10,11 +10,11 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &left_encoder { status = "disabled"; };
-&right_encoder { 
+&right_encoder {
     compatible = "alps,ec11";
     a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    steps = <20>; 
+    steps = <20>;
 };
 &sensors {
   sensors = <&right_encoder>;
@@ -22,6 +22,16 @@
 };
 
 / {
+    behaviors: {
+        fofunc: four_ffour {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FOUR_FUNCFOUR";
+            #binding-cells = <0>;
+            bindings = <&kp N4>, <&kp F4>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+    }
+
     keymap {
         compatible = "zmk,keymap";
 
